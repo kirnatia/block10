@@ -199,3 +199,9 @@ body {
     z-index: 5;
     right: 20em;
   }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="container"] {
+      width: 100%;
+    }
+  }
