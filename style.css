@@ -117,7 +117,6 @@ body {
     position: relative;
     z-index: -1;
   }
-  
   .ground {
     height: 75px;
     width: 150px;
@@ -211,10 +210,7 @@ body {
     bottom: 12%;
     z-index: 3;
     right: 21%;
-  }
-  
-
-  
+  } 
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="container"] {
