@@ -45,10 +45,7 @@ body {
     font-weight: 800;
   }
 
-  .box4 {
-    background-color: rgb(104, 93, 116);
-    grid-column-start: span 1;
-  }
+
   .lefteye {
     background-color: black;
     border-radius: 50px 70px 50px 70px;
@@ -114,7 +111,13 @@ body {
     text-align: center;
     font-weight: 800;
   }
-
+  .box4 {
+    background-color: rgb(104, 93, 116);
+    grid-column-start: span 1;
+    position: relative;
+    z-index: -1;
+  }
+  
   .ground {
     height: 75px;
     width: 150px;
@@ -125,6 +128,7 @@ body {
     right: 21%;
     z-index: 1;
   }
+  
   .layer1 {
     width: 0;
     height: 0;
@@ -136,6 +140,7 @@ body {
     z-index: 2;
     right: 21%;
   }
+  
   .layer2 {
     width: 0;
     height: 0;
@@ -147,6 +152,7 @@ body {
     z-index: 3;
     right: 21%;
   }
+  
   .layer3 {
     width: 0;
     height: 0;
@@ -158,6 +164,7 @@ body {
     z-index: 3;
     right: 21%;
   }
+  
   .layer4 {
     width: 0;
     height: 0;
@@ -170,35 +177,44 @@ body {
     right: 21%;
   }
   .layer5 {
-    width: 10px;
-    height: 10px;
-    background: rgb(189, 55, 55);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 20%;
-    z-index: 5;
-    right: 20em;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 160px solid green;
+  position: absolute;
+  bottom: 12%;
+  z-index: 3;
+  right: 21%;
+   
   }
+  
   .layer6 {
-    width: 10px;
-    height: 10px;
-    background: rgb(189, 55, 55);
-    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 160px solid rgb(8, 109, 50);
     position: absolute;
-    bottom: 25%;
-    z-index: 5;
-    right: 21em;
+    bottom: 16%;
+    z-index: 4;
+    right: 21%;
   }
+  
   .layer7 {
-    width: 10px;
-    height: 10px;
-    background: rgb(189, 55, 55);
-    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 160px solid green;
     position: absolute;
-    bottom: 30%;
-    z-index: 5;
-    right: 20em;
+    bottom: 12%;
+    z-index: 3;
+    right: 21%;
   }
+  
+
+  
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="container"] {
