@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(122, 120, 117);
+    color: rgb(49, 45, 45);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto 100px;
+    height: 130vh;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  .box1 {
+    background-color: teal;
+    grid-column-start: span 3;
+    text-decoration-line: underline;
+    padding-top: 5%;
+    font-weight: 800;
+  }
+  .box2 {
+    background-color: rgb(63, 88, 92);
+    grid-column-start: span 1;
+    padding: 10px;
+    font-weight: 800;
+    width: auto;
+  }
+
+  .box3 {
+    background-color: rgb(196, 218, 218);
+    grid-column-start: span 1;
+    border-radius: 150px 150px 150px 150px;
+    position: relative;
+    left: 28%;
+    top: 25%;
+    width: 120px;
+    height: 120px;
+    font-weight: 800;
+  }
+
+  .box4 {
+    background-color: rgb(104, 93, 116);
+    grid-column-start: span 1;
+  }
+  .lefteye {
+    background-color: black;
+    border-radius: 50px 70px 50px 70px;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    width: 15px;
+    height: 15px;
+  }
+  .righteye {
+    background-color: rgb(8, 8, 8);
+    border-radius: 70px 50px 70px 50px;
+    position: relative;
+    top: 20%;
+    left: 70%;
+    width: 15px;
+    height: 15px;
+  }
+  .nose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 8px;
+    width: 15px;
+    border-radius: 0 0 150px 150px;
+    background-color: green;
+  }
+  .mouth {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 10px;
+    width: 30px;
+    border-radius: 0 0 150px 150px;
+    background-color: rgb(219, 67, 118);
+  }
+  .hat {
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 100px solid #555;
+    position: absolute;
+    bottom: 80%;
+    left: 55%;
+  }
+  .body {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 200px solid #5a0b49;
+    position: absolute;
+    bottom: -90%;
+    left: -10%;
+    z-index: -1;
+  }
+
+  h1, h3 {
+    border: 1px yellow;
+    border-bottom-style: groove;
+    border-radius: 35px;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .ground {
+    height: 75px;
+    width: 150px;
+    background-color: indianred;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3%;
+    right: 21%;
+    z-index: 1;
+  }
+  .layer1 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 160px solid green;
+    position: absolute;
+    bottom: 4%;
+    z-index: 2;
+    right: 21%;
+  }
+  .layer2 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 160px solid rgb(8, 109, 50);
+    position: absolute;
+    bottom: 8%;
+    z-index: 3;
+    right: 21%;
+  }
+  .layer3 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 160px solid green;
+    position: absolute;
+    bottom: 12%;
+    z-index: 3;
+    right: 21%;
+  }
+  .layer4 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 160px solid rgb(8, 109, 50);
+    position: absolute;
+    bottom: 16%;
+    z-index: 4;
+    right: 21%;
+  }
+  .layer5 {
+    width: 10px;
+    height: 10px;
+    background: rgb(189, 55, 55);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    z-index: 5;
+    right: 20em;
+  }
+  .layer6 {
+    width: 10px;
+    height: 10px;
+    background: rgb(189, 55, 55);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25%;
+    z-index: 5;
+    right: 21em;
+  }
+  .layer7 {
+    width: 10px;
+    height: 10px;
+    background: rgb(189, 55, 55);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30%;
+    z-index: 5;
+    right: 20em;
+  }
